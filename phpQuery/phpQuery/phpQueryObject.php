@@ -747,7 +747,7 @@ class phpQueryObject
 					// attr with specifed value
 					if (mb_strpos($s, '=')) {
 						$value = null;
-						list($attr, $value) = explode('=', $attr);
+						list($attr, $value) = explode('=', $attr, 2);
 						$value = trim($value, "'\"");
 						if ($this->isRegexp($attr)) {
 							// cut regexp character
